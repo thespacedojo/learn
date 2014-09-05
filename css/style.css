@@ -15,6 +15,7 @@ p {
 }
 
 i.logo {
+  margin-top: 25px;
   color: red;
   font-size: 52px;
 }
