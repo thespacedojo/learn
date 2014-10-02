@@ -8,6 +8,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,900,700italic,400italic,300italic|Roboto+Slab:400,700,300" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <title>Mastering Meteor.js</title>
 </head>
 <body>
@@ -81,8 +82,18 @@
 
         <p>I also have a 2 session option (4 hours each) available for 'weekend warriors' and the next one is November 1st and November 8th from 10am-2pm EDT.</p>
 
-        <p>To secure your spot, click the button below. Lets make a little meteor magic together.</p>
-        <a class="btn btn-lg btn-success" onClick="ga('send', 'event', 'Training', 'Apply', 'Mastering Meteor');"  href="https://docs.google.com/forms/d/1Hqj-0MO2MUNEz9sezsThs6gabuWGwzHGvW9Q6DmeYcA/viewform">Beam me up, Scotty!</a>
+        <p>To secure your spot, just add your email and click the button. Lets make a little meteor magic together.</p>
+        <form action="http://class.meteorjs.club/newSignup" method="post" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-offset-2 col-sm-1 control-label" for="email">Email</label>
+            <div class="col-md-6">
+              <input class="form-control" name="email" type="email" placeholder="joe_developer@hotstartup.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-lg btn-success" onClick="ga('send', 'event', 'Training', 'Apply', 'Mastering Meteor');" value="Beam me up, Scotty!">
+          </div>
+        </form>
       </div>
     </div>
   </div>
